@@ -14,6 +14,10 @@ parser.add_argument("--days", type=int, help="Get weather forecast for x days", 
 parser.add_argument("--alerts", help="Get weather alerts", action="store_true")
 args = parser.parse_args()
 
+if not args.city:
+    print("Please specify at least one city")
+    exit(1)
+
 if not args.current and not args.forecast:
     print("Please specify if you need current weather or forecast with appropiate flags.")
     exit(1)

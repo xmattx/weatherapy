@@ -1,10 +1,12 @@
 # weatherapy
 weatherapi.com class and command line script
 
-getweather usage:
+## Usage 
 
+```bash
 python getweather.py --current --city Rome --aqi
-
+```
+```
 usage: getWeather.py [-h] [--current] [--forecast] [--city CITY] [--aqi] [--days DAYS] [--alerts]
 
 options:
@@ -22,4 +24,4 @@ options:
   --days DAYS  Get weather forecast for x days
   
   --alerts     Get weather alerts
-  
+  ```
